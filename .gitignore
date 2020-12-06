@@ -1,0 +1,5 @@
+dataset
+*.cpickle
+__pycache__
+.pytest_cache
+NOTES.md
