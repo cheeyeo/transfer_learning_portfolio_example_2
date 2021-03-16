@@ -27,7 +27,7 @@ if __name__ == "__main__":
 
     cv = KFold(n_splits=5, shuffle=True, random_state=1)
 
-    lg = LogisticRegression(max_iter=1000, random_state=1)
+    lg = LogisticRegression(max_iter=1000, random_state=1, n_jobs=1)
 
     model = GridSearchCV(lg, params, cv=cv, n_jobs=args["jobs"], refit=True)
 
